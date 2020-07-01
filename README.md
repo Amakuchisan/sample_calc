@@ -2,7 +2,7 @@
 
 四則演算のプログラムを使ったGit演習
 
-### 1. ローカルリポジトリクローンする
+### 1. ローカルリポジトリにクローンする
 
 ```
 $ git clone https://github.com/Amakuchisan/sample_calc.git
@@ -47,7 +47,9 @@ $ git commit -m "変更内容"
 
 ```
 $ git switch master
+$ git log # multiplyの変更が反映されていないことを確認する
 $ git merge impl-multiply
+$ git log # multiplyの変更が反映されていることを確認する
 ```
 
 ### 6. divide関数に0除算を判定させる
@@ -55,7 +57,13 @@ $ git merge impl-multiply
 0で割ってはいけない。
 0で割ろうとしたら，`[Error!] 0で割ってはいけません`などとメッセージを出してプログラムを終了させる。
 
+- 条件の判定にはif文を使用する
+- if(条件) {処理} の形で書く
+- a÷bなので、bが0かどうかを判定すれば良い
+
 ヒント: メッセージを出す時に、error関数を使う
+
+ヒント: C言語では、=は代入を意味する。等しいことの判定には==を利用する。
 
 ### 7. divide関数を、小数対応させる
 
