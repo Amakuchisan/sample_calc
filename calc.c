@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int add(int a, int b); // 足し算
-int subtract(int a, int b); // 引き算
-int multiply(int a, int b); // かけ算
-int divide(int a, int b); // わり算
-void error(char message[]); // エラーメッセージを出力し、プログラムを終了する
+int add(const int a, const int b); // 足し算
+int subtract(const int a, const int b); // 引き算
+int multiply(const int a, const int b); // かけ算
+int divide(const int a, const int b); // わり算
+void error(const char message[]); // エラーメッセージを出力し、プログラムを終了する
 
 int main(void) {
     int a, b, ans;
@@ -43,23 +43,23 @@ int main(void) {
     return 0;
 }
 
-int add(int a, int b) {
+int add(const int a, const int b) {
     return a + b;
 }
 
-int subtract(int a, int b) {
+int subtract(const int a, const int b) {
     return a - b;
 }
 
-int multiply(int a, int b) {
+int multiply(const int a, const int b) {
     return 0;
 }
 
-int divide(int a, int b) {
+int divide(const int a, const int b) {
     return a / b;
 }
 
-void error(char message[]) {
+void error(const char message[]) {
     fprintf(stderr, "[Error!] %s\n", message);
     exit(1);
 }
