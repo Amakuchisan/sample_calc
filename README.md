@@ -49,6 +49,7 @@ $ git commit -m "変更内容"
 ```
 $ git switch master
 $ git log # multiplyの変更が反映されていないことを確認する
+$ git diff master impl-multiply # multiplyの変更が反映されていないことを確認する
 $ git merge impl-multiply
 $ git log # multiplyの変更が反映されていることを確認する
 ```
