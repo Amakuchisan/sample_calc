@@ -22,6 +22,7 @@ $ ./a.out
 
 ```
 $ git branch impl-multiply
+$ git branch # ブランチが作成できたことを確認する
 ```
 
 #### 3-2 ブランチを移動する
