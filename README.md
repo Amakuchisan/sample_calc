@@ -7,6 +7,15 @@
 ```
 $ git clone https://github.com/Amakuchisan/sample_calc.git
 ```
+↓のように表示されればOK
+```
+Cloning into 'sample_calc'...
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 28 (delta 8), reused 12 (delta 2), pack-reused 0
+Unpacking objects: 100% (28/28), 7.00 KiB | 551.00 KiB/s, done.
+```
 
 ### 2. 実行する
 
